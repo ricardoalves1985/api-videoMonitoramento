@@ -1,3 +1,4 @@
+using System;
 namespace Manager.Domain.Entites{
     public class Servidor : Base{
     
@@ -28,6 +29,20 @@ namespace Manager.Domain.Entites{
         public void ChangeEnderecoIP(int portaIP){
             PortaIP = portaIP;
             Validate();
+        }
+
+        public override bool Validate(){
+
+            var validator = new ServidorValidator();
+            var validation = validator.Validate(this);
+
+            if(!validation.IsValid){
+                foreach(var error in validation.Errors)
+                _errors.Add(error.errorMessage);
+
+                throw new Exception("Alguns campos estão invalidos, por favor os corrija",_errors[0]);
+            }
+
         }
 
     
