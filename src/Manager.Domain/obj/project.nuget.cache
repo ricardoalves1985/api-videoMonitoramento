@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "tDd+V2A3ff5KnS7Pzh11lUk7GiVTHb9IoWrGvsts7or2AmRHwrd3UxKQu8H4WT8r352CeTQ5JcOfYC21ClUbnA==",
+  "success": true,
+  "projectFilePath": "/Users/ricardoalves/Projects/api-videoMonitoramento/src/Manager.Domain/Manager.Domain.csproj",
+  "expectedPackageFiles": [
+    "/Users/ricardoalves/.nuget/packages/fluentvalidation/10.1.0/fluentvalidation.10.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
