@@ -1,4 +1,8 @@
 using System;
+using System.Collections.Generic;
+using Manager.Domain.Validators;
+
+
 namespace Manager.Domain.Entites{
     public class Servidor : Base{
     
@@ -15,9 +19,9 @@ namespace Manager.Domain.Entites{
             NameServidor = nameServidor;
             EnderecoIP = enderecoIP;
             PortaIP = portaIP;
-            _errors = new list<string>();
+            _errors = new List<string>();
         }
-
+        
         public void ChangeNameServidor(string nameServidor){
             NameServidor = nameServidor;
             Validate();
@@ -38,10 +42,12 @@ namespace Manager.Domain.Entites{
 
             if(!validation.IsValid){
                 foreach(var error in validation.Errors)
-                _errors.Add(error.errorMessage);
+                _errors.Add(error.ErrorMessage);
 
-                throw new Exception("Alguns campos estão invalidos, por favor os corrija",_errors[0]);
+                throw new Exception("Alguns campos estão invalidos, por favor os corrija" + _errors[0]);
             }
+
+            return true;
 
         }
 

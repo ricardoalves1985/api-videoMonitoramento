@@ -1,8 +1,8 @@
 using FluentValidation;
-
+using Manager.Domain.Entites;
 
 namespace Manager.Domain.Validators{
-    public class ServidorValidator{
+    
          public class ServidorValidator : AbstractValidator<Servidor>{
 
              public ServidorValidator()
@@ -21,10 +21,10 @@ namespace Manager.Domain.Validators{
                     .NotNull()
                     .WithMessage("A entidade não pode ser nula.")  
 
-                    .MinimunLength(3)
+                    .MinimumLength(3)
                     .WithMessage("O nome deve ter no mínimo 3 caracteres.") 
                     
-                    .MaximunLength(80)
+                    .MaximumLength(80)
                     .WithMessage("O nome deve ter no máximo 80 caracteres.") ;
 
                 
@@ -32,4 +32,3 @@ namespace Manager.Domain.Validators{
              }
          }
     }
-}
