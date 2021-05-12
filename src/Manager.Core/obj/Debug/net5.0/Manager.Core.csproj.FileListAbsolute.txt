@@ -1,0 +1,12 @@
+/Users/ricardoalves/Projects/api-videoMonitoramento/src/Manager.Core/bin/Debug/net5.0/Manager.Core.deps.json
+/Users/ricardoalves/Projects/api-videoMonitoramento/src/Manager.Core/bin/Debug/net5.0/Manager.Core.dll
+/Users/ricardoalves/Projects/api-videoMonitoramento/src/Manager.Core/bin/Debug/net5.0/ref/Manager.Core.dll
+/Users/ricardoalves/Projects/api-videoMonitoramento/src/Manager.Core/bin/Debug/net5.0/Manager.Core.pdb
+/Users/ricardoalves/Projects/api-videoMonitoramento/src/Manager.Core/obj/Debug/net5.0/Manager.Core.csprojAssemblyReference.cache
+/Users/ricardoalves/Projects/api-videoMonitoramento/src/Manager.Core/obj/Debug/net5.0/Manager.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ricardoalves/Projects/api-videoMonitoramento/src/Manager.Core/obj/Debug/net5.0/Manager.Core.AssemblyInfoInputs.cache
+/Users/ricardoalves/Projects/api-videoMonitoramento/src/Manager.Core/obj/Debug/net5.0/Manager.Core.AssemblyInfo.cs
+/Users/ricardoalves/Projects/api-videoMonitoramento/src/Manager.Core/obj/Debug/net5.0/Manager.Core.csproj.CoreCompileInputs.cache
+/Users/ricardoalves/Projects/api-videoMonitoramento/src/Manager.Core/obj/Debug/net5.0/Manager.Core.dll
+/Users/ricardoalves/Projects/api-videoMonitoramento/src/Manager.Core/obj/Debug/net5.0/ref/Manager.Core.dll
+/Users/ricardoalves/Projects/api-videoMonitoramento/src/Manager.Core/obj/Debug/net5.0/Manager.Core.pdb

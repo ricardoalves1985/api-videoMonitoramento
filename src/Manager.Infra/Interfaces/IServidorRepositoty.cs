@@ -1,3 +1,8 @@
+
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Manager.Domain.Entites;
+
 namespace Manager.Infra.Interfaces{
     public interface IServidorRepository : IBaseRepository<Servidor>{
 

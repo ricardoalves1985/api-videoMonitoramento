@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 namespace Manager.Domain.Entites{
     public abstract class Base{
-        public long Id{get;set;}
+        public long Id {get;set;}
         internal List<string> _errors;
 
         public IReadOnlyCollection<string> Errors => _errors; 

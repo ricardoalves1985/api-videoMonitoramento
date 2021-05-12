@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Manager.Domain.Entities;
+using Manager.Domain.Entites;
 using Manager.Infra.Context;
 using Manager.Infra.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -15,13 +15,18 @@ namespace Manager.Infra.Repositories{
             _context = context;
         }
 
+        public Task<Servidor> GetByID(int id)
+        {
+            throw new System.NotImplementedException();
+        }
+
         public async Task<Servidor> GetByNameServidor(string nameServido)
         {
-            var servidor = await _context.Users
+            var servidor = await _context.Servidores
                                    .Where
                                    (
                                         x =>
-                                            x.Servidor.ToLower() == nameServido.ToLower()
+                                            x.NameServidor.ToLower() == nameServido.ToLower()
                                     )
                                     .AsNoTracking()
                                     .ToListAsync();
@@ -29,13 +34,18 @@ namespace Manager.Infra.Repositories{
             return servidor.FirstOrDefault();
         }
 
+        public Task<List<Servidor>> SearchByName(string nameservidor)
+        {
+            throw new System.NotImplementedException();
+        }
+
         public async Task<List<Servidor>> SearchyByNameServidor(string nameServido)
         {
-            var allServidores = await _context.Users
+            var allServidores = await _context.Servidores
                                    .Where
                                    (
                                         x =>
-                                            x.Servidor.ToLower().Contains(nameServido.ToLower())
+                                            x.NameServidor.ToLower().Contains(nameServido.ToLower())
                                     )
                                     .AsNoTracking()
                                     .ToListAsync();
